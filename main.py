@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-url = "http://books.toscrape.com/catalogue/the-project_856/index.html"
+url = "http://books.toscrape.com/catalogue/a-light-in-the-attic_1000"
 page = requests.get(url)
 
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -25,3 +25,5 @@ print(soup)
 # titles = []
 # for title in bs_titles:
 #     titles.append(title.string)
+
+
